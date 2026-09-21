@@ -106,7 +106,9 @@ export const ProductPageView = ({
         <div className="cart-title">
           <h2>Shopping Cart</h2>
 
-          <strong>{cartCount} items</strong>
+          <strong>
+            {cartCount} item{cartCount === 1 ? "" : "s"}
+          </strong>
         </div>
 
         {cartItems.length === 0 && <p className="empty">Cart is empty.</p>}
